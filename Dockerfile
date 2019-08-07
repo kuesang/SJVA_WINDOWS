@@ -16,7 +16,7 @@ RUN mkdir /home/SJVA
 RUN git clone https://github.com/soju6jan/SJVA.git /home/SJVA
 RUN cd /home/SJVA
 
-RUN apt-get -y install libffi-dev libxml2-dev libxslt-dev python-dev libjpeg-turbo-dev zlib1g-dev
+RUN apt-get -y install libffi-dev libxml2-dev libxslt-dev python-dev libjpeg-turbo8-dev zlib1g-dev
 
 RUN pip install --upgrade pyasn1
 RUN pip install -r requirements.txt
