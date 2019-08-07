@@ -10,11 +10,11 @@ RUN apt-get -qq -y install git curl build-essential
 RUN apt-get -y install python2.7 
 RUN apt-get -y install python-pip python-dev python-setuptools
 
-RUN CD /home/
+RUN cd /home/
 
 RUN git clone https://github.com/soju6jan/SJVA.git
 RUN mkdir /home/SJVA
-RUN CD /home/SJVA
+RUN cd /home/SJVA
 
 RUN apt-get -y install libffi-dev libxml2-dev libxslt-dev python-dev libjpeg62-turbo-dev zlib1g-dev
 
