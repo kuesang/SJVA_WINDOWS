@@ -1,8 +1,7 @@
-FROM ubuntu:18.04
+FROM ubuntu:latest
 MAINTAINER YKS
 
 # Run upgrades
-RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
 RUN apt-get update
 
 # Install basic packages
