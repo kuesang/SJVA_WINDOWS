@@ -2,7 +2,7 @@ FROM ubuntu:latest
 MAINTAINER YKS
 
 # Run upgrades
-RUN apt-get update
+RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
 
 # Install basic packages
 RUN apt-get -qq -y install git curl build-essential
